@@ -23,12 +23,12 @@ final class Customies
         return new Customies($pluginBase);
     }
 
-    protected function onLoad(): void
+    public function load(): void
     {
         Cache::setInstance(new Cache($this->pluginBase->getDataFolder() . "idcache", true));
     }
 
-    protected function onEnable(): void
+    public function enable(): void
     {
         $this->pluginBase->getServer()->getPluginManager()->registerEvents(new CustomiesListener(), $this->pluginBase);
 

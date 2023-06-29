@@ -4,12 +4,11 @@
   "type": "library",
   "autoload": {
     "psr-4": {
-      "\\": "/src"
+      "\\": "./"
     }
   },
   "require": {
     "ext-zlib": "*",
-    "ext-igbinary": "*",
-    "ext-pthreads": "*"
+    "ext-igbinary": "*"
   }
 }

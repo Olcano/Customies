@@ -3,25 +3,30 @@ declare(strict_types=1);
 
 namespace customiesdevs\customies\item\component;
 
-final class FuelComponent implements ItemComponent {
+final class FuelComponent implements ItemComponent
+{
 
-	private float $duration;
+    private float $duration;
 
-	public function __construct(float $duration) {
-		$this->duration = $duration;
-	}
+    public function __construct(float $duration)
+    {
+        $this->duration = $duration;
+    }
 
-	public function getName(): string {
-		return "minecraft:fuel";
-	}
+    public function getName(): string
+    {
+        return "minecraft:fuel";
+    }
 
-	public function getValue(): array {
-		return [
-			"duration" => $this->duration
-		];
-	}
+    public function getValue(): array
+    {
+        return [
+            "duration" => $this->duration
+        ];
+    }
 
-	public function isProperty(): bool {
-		return false;
-	}
+    public function isProperty(): bool
+    {
+        return false;
+    }
 }

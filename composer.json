@@ -1,0 +1,15 @@
+{
+  "name": "olcano/customies",
+  "description": "Library to load custom objects",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "\\": "/src"
+    }
+  },
+  "require": {
+    "ext-zlib": "*",
+    "ext-igbinary": "*",
+    "ext-pthreads": "*"
+  }
+}

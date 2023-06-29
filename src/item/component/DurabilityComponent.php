@@ -3,25 +3,30 @@ declare(strict_types=1);
 
 namespace customiesdevs\customies\item\component;
 
-final class DurabilityComponent implements ItemComponent {
+final class DurabilityComponent implements ItemComponent
+{
 
-	private int $maxDurability;
+    private int $maxDurability;
 
-	public function __construct(int $maxDurability) {
-		$this->maxDurability = $maxDurability;
-	}
+    public function __construct(int $maxDurability)
+    {
+        $this->maxDurability = $maxDurability;
+    }
 
-	public function getName(): string {
-		return "minecraft:durability";
-	}
+    public function getName(): string
+    {
+        return "minecraft:durability";
+    }
 
-	public function getValue(): array {
-		return [
-			"max_durability" => $this->maxDurability
-		];
-	}
+    public function getValue(): array
+    {
+        return [
+            "max_durability" => $this->maxDurability
+        ];
+    }
 
-	public function isProperty(): bool {
-		return false;
-	}
+    public function isProperty(): bool
+    {
+        return false;
+    }
 }
